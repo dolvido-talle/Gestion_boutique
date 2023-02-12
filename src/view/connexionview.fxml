@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="426.0" prefWidth="603.0" styleClass="anchorCONEX" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.connexioncontroller">
+   <children>
+      <ImageView fitHeight="89.0" fitWidth="199.0" layoutX="-8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="100.0" layoutY="14.0" prefHeight="37.0" prefWidth="368.0" text="      ESPACE D'AUTHENTIFICATION">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="200.0" text=" Login" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="261.0" text="Password" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="325.0" text="Etat" textFill="#f5f0f0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="login" layoutX="200.0" layoutY="201.0" />
+      <Label fx:id="etat" layoutX="191.0" layoutY="324.0" prefHeight="27.0" prefWidth="149.0" />
+      <Button fx:id="conecter" layoutX="439.0" layoutY="342.0" mnemonicParsing="false" onAction="#connexion" prefHeight="37.0" prefWidth="103.0" text="Connexion" />
+      <PasswordField fx:id="password" layoutX="200.0" layoutY="262.0" />
+      <MaterialDesignIconView glyphName="LOCK_OPEN" layoutX="170.0" layoutY="282.0" size="20" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="102.0" fitWidth="121.0" layoutX="218.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/17f93235-85ac-4dac-b031-8211f1923c8b.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="81.0" layoutX="162.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/css/1.5x/toggle@1.5x.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="45.0" layoutX="78.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="170.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/css/last-img/1x/1x/1x/1x/1x/1x/profile.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

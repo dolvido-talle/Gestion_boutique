@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="709.0" prefWidth="758.0" styleClass="Anchor" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Gestioncommandecontroller">
+   <children>
+      <Label layoutX="231.0" layoutY="33.0" prefHeight="51.0" prefWidth="268.0" text="    Gestion commande">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="13.0" layoutY="131.0" prefHeight="209.0" prefWidth="242.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Id-com">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></Label>
+            <Label text="Id-client" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></Label>
+            <Label text="Id-produit" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></Label>
+            <Label text="Date-com" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></Label>
+            <Label GridPane.rowIndex="5">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <Label prefHeight="18.0" prefWidth="112.0" text="Date-livraison " GridPane.rowIndex="4">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="datelivrai1" prefHeight="25.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <JFXDatePicker fx:id="datecom1" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label prefHeight="18.0" prefWidth="117.0" text="Delais-conception" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idcom1" GridPane.columnIndex="1" />
+            <JFXDatePicker fx:id="dateconcep1" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label prefHeight="18.0" prefWidth="101.0" text="QuantiCom" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="qtecom" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ComboBox fx:id="idclient1" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="idpro1" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <JFXButton fx:id="ajout" layoutX="1.0" layoutY="404.0" onAction="#Ajout" text="Ajouter">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="delete" layoutX="89.0" layoutY="404.0" onAction="#Supprime" text="Supprimer">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="modif" layoutX="208.0" layoutY="404.0" onAction="#Modifie" text="Modifier">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font></JFXButton>
+      <TableView fx:id="tablec" layoutX="280.0" layoutY="140.0" prefHeight="216.0" prefWidth="476.0" styleClass="tabpaneCOMAND" stylesheets="@../CSS/gestcomnde.css">
+        <columns>
+          <TableColumn fx:id="idcome" prefWidth="56.0" text="Id-com" />
+          <TableColumn fx:id="idcliene" prefWidth="62.0" text="Id-client" />
+            <TableColumn fx:id="idproduite" prefWidth="69.0" text="Id-produit" />
+            <TableColumn fx:id="datecome" prefWidth="66.0" text="Date-com" />
+            <TableColumn fx:id="datlivrai" prefWidth="117.0" text="Date-livraison" />
+            <TableColumn fx:id="delaiss" prefWidth="110.0" text="Delais-conception" />
+        </columns>
+      </TableView>
+      <Pane layoutX="185.0" layoutY="456.0" prefHeight="254.0" prefWidth="399.0" styleClass="panefactureCOMAND">
+         <children>
+            <Label layoutX="127.0" layoutY="25.0" text="Espace facture">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="111.0" layoutY="53.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Num-facture">
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font></Label>
+                  <Label text="Nom-client" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font></Label>
+                  <Label prefHeight="28.0" prefWidth="91.0" text="Prix-unitaire" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font></Label>
+                  <Label text="Designation" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font></Label>
+                  <TextField fx:id="numfac" GridPane.columnIndex="1" />
+                  <TextField fx:id="nom" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="prixu" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="design" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label prefHeight="23.0" prefWidth="100.0" text="Quantitees" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="qte" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+            <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="222.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/css/1x/1.5x/1.5x/local_printshop@1.5x.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="124.0" layoutY="211.0" onAction="#imprimer" text="Imprimer">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXButton fx:id="affich" layoutX="342.0" layoutY="374.0" onAction="#Affiche" styleClass="button-form" text="Afficher">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="select" layoutX="554.0" layoutY="374.0" onAction="#Selection" styleClass="button-form" text="Selection">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></JFXButton>
+      <Separator layoutX="276.0" layoutY="125.0" orientation="VERTICAL" prefHeight="327.0" prefWidth="6.0" styleClass="seperatorCOMAND" stylesheets="@../CSS/gestcomnde.css" />
+      <Separator layoutX="13.0" layoutY="452.0" prefHeight="6.0" prefWidth="757.0" styleClass="seperatorCOMAND" />
+      <Separator layoutX="1.0" layoutY="124.0" prefHeight="6.0" prefWidth="757.0" styleClass="seperatorCOMAND" />
+      <ImageView fitHeight="18.0" fitWidth="20.0" layoutX="62.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/css/1x/1.5x/add@1.5x.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="114.0" fitWidth="79.0" layoutX="36.0" layoutY="511.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../1.5x/cart@1.5x.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="175.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/css/1x/1.5x/1.5x/1.5x/delete_outline@1.5x.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="rt" layoutX="5.0" layoutY="3.0" onAction="#retour" styleClass="button-form" stylesheets="@../CSS/gestpro.css" text="retour">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

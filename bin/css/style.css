@@ -1,0 +1,17 @@
+/* --------------------------------
+
+Generated using nucleoapp.com
+
+-------------------------------- */
+.icon {
+    display: inline-block;
+    background-image: url(../icons.svg);
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.icon.icon-toggle {
+    background-position: -0px 0px;
+    height: 24px;
+    width: 24px;
+} 

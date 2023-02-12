@@ -1,0 +1,57 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.gestcliACC{
+	-fx-background-color: #008080;
+}
+.gesproACC{
+	-fx-background-color:  #FB04E2;
+}
+.gestcomACC{
+	-fx-background-color:   #808040;
+}
+.paneACC{
+	-fx-background-color:    #808080;
+}
+.anchorCONEX{
+	-fx-background-color:     #0E8781;
+	
+	}
+	.seperatorCOMAND{
+	-fx-background-color:#48494D;
+}
+.tabpaneCOMAND{
+	-fx-background-color: #9DBBD2;
+}
+.panefactureCOMAND{
+	-fx-background-color:  #8080C0;
+}
+.AnchorCOMAND{
+	-fx-background-color:  #C0C0C0;
+}
+	
+	.button-form{
+	-fx-background-color:rgba(131,65,65,0.4);
+	-fx-text-fill:black;
+	-fx-cursor:hand;
+
+}
+.anchor-panePRODU{
+	
+	
+	-fx-background-color:#E66759;
+}
+
+
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.separatorPRODU{
+	
+	-fx-background-color:#48494D;
+	
+	}
+	.tableauPRODU{
+		-fx-background-color: #9DBBD2;
+		}
